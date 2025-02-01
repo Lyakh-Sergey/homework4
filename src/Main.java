@@ -66,7 +66,7 @@ public class Main {
         int three = 2;
         boolean oneIsTheMost = one > two && one > three;
         boolean twoIsTheMost = two > one && two > three;
-        boolean threeIsTheMost = three > two || three > two;
+        boolean threeIsTheMost = three > one && three > two;
         if (oneIsTheMost) {
             System.out.println("Из трех чисел: " + one + " , " + two + " , " + three + " самое большое число " + one);
         } else if (twoIsTheMost) {
